@@ -1,0 +1,16 @@
+.Arbo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  .nav-active {
+    color: #000000;
+    font-weight: 600;
+  }
+  .nav-disactive {
+    font-weight: 500;
+    color: #9a9a9a;
+  }
+  .slash {
+    margin: 0 1px 0 4px;
+  }
+}
