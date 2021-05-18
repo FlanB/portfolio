@@ -1,33 +1,72 @@
-import "./Navbar.scss"
-import Arbo from "./Arbo/Arbo"
+import "./_Navbar.scss"
+
 import Boutons from "../Boutons/Boutons"
+
+import { Link, useLocation } from "react-router-dom"
 import { useState } from "react"
 
-function Navbar() {
-  let [skill, setSkill] = useState(0)
+export default function Navbar() {
+  const location = useLocation()
+  const [skill, setSkill] = useState("design")
+
   return (
     <nav>
-      <div className="boutons">
+      <div className="nav-permanent">
+        <Link
+          to="/"
+          className={location.pathname === "/about" ? "a-disactive" : ""}
+        >
+          Clément Renou
+        </Link>
+        <svg
+          width="12"
+          height="35"
+          viewBox="0 0 12 35"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="slash"
+        >
+          <line
+            x1="10.9963"
+            y1="1.24727"
+            x2="1.24725"
+            y2="33.3784"
+            stroke="#FB7185"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        </svg>
+        <Link
+          to="/about"
+          className={location.pathname === "/" ? "a-disactive" : ""}
+        >
+          À propos
+        </Link>
+      </div>
+
+      <div
+        className="nav-buttons"
+        style={location.pathname === "/" ? null : { visibility: "hidden" }}
+      >
         <Boutons
-          onClick={() => setSkill(0)}
-          state={skill !== 0 ? "disable" : ""}
           color="red"
+          enable={skill === "design" ? true : false}
+          onClick={() => setSkill("design")}
         >
           Design
         </Boutons>
-        <div className="margin-btn">
-          <Boutons
-            onClick={() => setSkill(1)}
-            state={skill !== 1 ? "disable" : ""}
-            color="violet"
-          >
-            Programmation
-          </Boutons>
-        </div>
         <Boutons
-          onClick={() => setSkill(2)}
-          state={skill !== 2 ? "disable" : ""}
+          color="violet"
+          center
+          enable={skill === "programmation" ? true : false}
+          onClick={() => setSkill("programmation")}
+        >
+          Programmation
+        </Boutons>
+        <Boutons
           color="blue"
+          enable={skill === "audiovisuel" ? true : false}
+          onClick={() => setSkill("audiovisuel")}
         >
           Audiovisuel
         </Boutons>
@@ -35,4 +74,3 @@ function Navbar() {
     </nav>
   )
 }
-export default Navbar

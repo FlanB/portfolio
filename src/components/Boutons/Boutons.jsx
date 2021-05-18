@@ -1,10 +1,12 @@
-import "./Boutons.scss"
+import "./_Boutons.scss"
 
 function Boutons(props) {
   return (
     <button
+      className={`button ${props.color} btn-${props.center ? "center" : ""} btn-${
+        props.enable ? "enable" : "disable"
+      }`}
       onClick={props.onClick}
-      className={[`button ${props.color} ${props.state}`]}
     >
       {props.children}
     </button>
