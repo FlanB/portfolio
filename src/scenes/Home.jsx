@@ -32,7 +32,7 @@ function Home() {
           </Col>
         </Row>
         <Row className="slider">
-          <Col className="col" md={{ span: 4 }}>
+          <Col className="line-container" md={{ span: 4 }}>
             01
             <div className="line"></div>
             03
