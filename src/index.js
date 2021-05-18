@@ -1,18 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
-import App from './scenes/App';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./_index.scss"
 
-// You can choose your kind of history here (e.g. browserHistory)
-import { Router, hashHistory as history } from 'react-router';
-// Your routes.js file
-import routes from './routes';
+
+import React from "react"
+import ReactDOM from "react-dom"
+import App from "./scenes/App"
+import { BrowserRouter as Router } from "react-router-dom"
 
 ReactDOM.render(
   <React.StrictMode>
-     <App/>
-     {/* <Router routes={routes} history={history} />, */}
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
-  document.getElementById('root')
-  );
+  document.getElementById("root")
+)
