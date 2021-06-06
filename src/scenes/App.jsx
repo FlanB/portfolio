@@ -1,6 +1,7 @@
 import { Route, Switch } from "react-router-dom"
 import Home from "./Home"
 import About from "./About"
+import Project from "./Project"
 import Navbar from "../components/Navbar/Navbar"
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
+        <Route path="/about" component={About} />
+        <Route path="/project/:name" component={Project} />
       </Switch>
     </>
   )

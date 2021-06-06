@@ -1,0 +1,29 @@
+.row {
+  margin: 0;
+}
+.project-container-title {
+  height: 100vh;
+  margin-top: 16rem;
+  .project-logo {
+    margin-bottom: 8rem;
+  }
+  h1::first-letter {
+    text-transform: uppercase;
+  }
+  .text {
+    & > * {
+      padding: 0 1rem;
+    }
+    .title {
+      text-align: end;
+      .date {
+        position: relative;
+        top: -1rem;
+        left: -2px;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import "./_Home.scss"
 
-import Boutons from "../components/Boutons/Boutons"
+import { Link } from "react-router-dom"
 
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
@@ -9,7 +9,7 @@ import Col from "react-bootstrap/Col"
 function Home() {
   return (
     <>
-      <Container>
+      <Container className="home">
         <Row className="content">
           <Col md={{ span: 7 }}>
             <img src="https://via.placeholder.com/640x780" alt="" />
@@ -24,9 +24,9 @@ function Home() {
               </p>
             </div>
             <div className="home-interaction">
-              <Boutons enable color="red">
+              <Link to="/project/makyma" className="red btn">
                 En savoir plus
-              </Boutons>
+              </Link>
               <div className="line"></div>
             </div>
           </Col>
