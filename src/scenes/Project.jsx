@@ -7,7 +7,7 @@ export default function Project(props) {
   return (
     <>
       <div className="project-container-title">
-        <Row className="project-logo justify-content-center">
+        <Row className="justify-content-center">
           <Col md="4">
             <svg width="100%" viewBox="0 0 394 303">
               <path d="M175.729 71.1229V293.65C175.729 295.903 176.623 298.064 178.214 299.657C179.806 301.25 181.964 302.145 184.215 302.145H238.746C239.86 302.146 240.964 301.927 241.994 301.5C243.024 301.073 243.96 300.448 244.748 299.659C245.536 298.87 246.161 297.933 246.587 296.902C247.013 295.871 247.232 294.766 247.231 293.65V258.497C247.231 247.033 261.205 241.436 269.106 249.738L315.305 298.287C316.49 299.53 317.915 300.52 319.493 301.196C321.071 301.873 322.769 302.222 324.486 302.222H385.219C386.865 302.223 388.476 301.744 389.855 300.844C391.234 299.944 392.322 298.662 392.987 297.154C393.651 295.646 393.863 293.978 393.596 292.351C393.329 290.725 392.596 289.211 391.485 287.995L285.974 172.387C285.098 171.428 284.026 170.666 282.832 170.154C281.638 169.642 280.348 169.391 279.049 169.418C277.75 169.444 276.472 169.748 275.299 170.309C274.127 170.871 273.088 171.676 272.252 172.671L269.627 175.788C262.003 184.85 247.231 179.459 247.231 167.615V8.53381C247.231 1.73261 239.608 -2.37001 234.017 1.48787C208.707 18.9288 183.661 30.3286 169.443 36.0993C168.22 36.5964 167.131 37.3745 166.264 38.3707C165.397 39.367 164.776 40.5535 164.452 41.8343C164.127 43.1152 164.108 44.4544 164.397 45.7439C164.685 47.0334 165.272 48.237 166.111 49.2573C176.288 61.5781 175.729 71.1229 175.729 71.1229Z" />
@@ -29,7 +29,37 @@ export default function Project(props) {
           </Col>
         </Row>
       </div>
-      <Container></Container>
+      <Container className="project">
+        <div className="img">
+          <img src="/img/makyma/index.png" alt="" />
+          <img src="/img/makyma/categories.png" alt="" />
+          <img src="/img/makyma/products.png" alt="" />
+        </div>
+        <Row className="credits">
+          <Col className="title">Équipe</Col>
+          <Col className="jobs">
+            <div>
+              <span>Designer :</span>
+              <ul>
+                <li>Clément Renou</li>
+                <li>Anais Mancho</li>
+                <li>Hugo Blanchard</li>
+                <li>Adel Sanaa</li>
+                <li>Léo Melle</li>
+              </ul>
+            </div>
+            <div>
+              <span>Développeur :</span>
+              <ul>
+                <li>Gabriel Rouleau</li>
+                <li>Élise Echasseriau</li>
+                <li>Hugo Faugeroux</li>
+                <li>Sami Lafrance</li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </>
   )
 }

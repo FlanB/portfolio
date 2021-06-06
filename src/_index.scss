@@ -1,9 +1,16 @@
 @import "~bootstrap/scss/bootstrap-grid";
 
+$red: #fb7185;
+
 * {
   box-sizing: border-box;
   margin: 0;
   font-family: Poppins;
+}
+ul{
+  list-style: none;
+  margin-block: 0;
+  padding-inline: 0;
 }
 a {
   color: inherit;
@@ -32,10 +39,10 @@ button {
   /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none;
 }
-body{
-overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-h1{
+h1 {
   font-size: 4.5rem;
 }
 p {
