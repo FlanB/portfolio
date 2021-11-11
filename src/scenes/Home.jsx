@@ -34,7 +34,9 @@ function Home() {
         <Row className="slider">
           <Col className="line-container" md={{ span: 4 }}>
             01
-            <div className="line"></div>
+            <div className="line">
+              <span style={{ width: Math.random() * 100 + "%" }}></span>
+            </div>
             03
           </Col>
         </Row>
