@@ -1,4 +1,5 @@
 import "./_Home.scss"
+import { useState, useEffect } from "react"
 
 import { Link } from "react-router-dom"
 
@@ -7,6 +8,19 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
 function Home() {
+  const [progressBarWidth, setProgressBarWidth] = useState(0)
+
+  useEffect(() => {
+    setInterval(
+      () => setProgressBarWidth((progressBarWidth) => progressBarWidth + 10),
+      1000
+    )
+  }, [])
+  if (progressBarWidth >= 100) {
+    setProgressBarWidth(0)
+    setTimeout(() => console.log("endTransition"), 1000)
+  }
+
   return (
     <>
       <Container className="home">
@@ -35,7 +49,7 @@ function Home() {
           <Col className="line-container" md={{ span: 4 }}>
             01
             <div className="line">
-              <span style={{ width: Math.random() * 100 + "%" }}></span>
+              <span style={{ width: progressBarWidth + "%" }}></span>
             </div>
             03
           </Col>
