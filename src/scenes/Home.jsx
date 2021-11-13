@@ -7,6 +7,8 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
+import projects from "../projects.json"
+
 function Home() {
   const [progressBarWidth, setProgressBarWidth] = useState(0)
 
@@ -26,16 +28,12 @@ function Home() {
       <Container className="home">
         <Row className="content">
           <Col md={{ span: 7 }}>
-            <img src="https://via.placeholder.com/640x780" alt="" />
+            <img src={projects[0].imgs[0]} alt="" />
           </Col>
           <Col className="home-info" md={{ span: 5 }}>
             <div className="home-text">
-              <h1 className="home-display">Makyma</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
-                at egestas faucibus sollicitudin egestas a, tellus ut facilisi.
-                Ipsum dictum cursus eleifend ut tincidunt accumsan ac justo.
-              </p>
+              <h1 className="home-display">{projects[0].name}</h1>
+              <p>{projects[0].description}</p>
             </div>
             <div className="home-interaction">
               <Link to="/project/makyma" className="red btn">
