@@ -1,48 +1,33 @@
-import "./_Home.scss"
-import { useState, useEffect, useRef } from "react"
+import { createContext, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Link } from "react-router-dom"
+import './_Home.scss'
 
-import { Container, Row, Col } from "react-bootstrap"
+import Slider from '../components/Slider/Slider'
 
-import projects from "../projects.json"
+import projects from '../projects.json'
 
-let index = 0
-let once = false
-let projectsList = []
+export let projectsList = []
+
+export const Context = createContext()
 
 function Home() {
-  const ProgressBar = useRef(null)
-  const [progressBarWidth, setProgressBarWidth] = useState(0)
+  const [index, setIndex] = useState(0)
+
   useEffect(() => {
     projects.forEach((project, index) => {
       projectsList.push(document.getElementById(index))
     })
     for (let id = 1; id < projectsList.length; id++) {
-      projectsList[id].style.display = "none"
+      projectsList[id].style.display = 'none'
     }
-    setInterval(
-      () => setProgressBarWidth((progressBarWidth) => progressBarWidth + 10),
-      1000
-    )
-  }, [])
-
-  if (progressBarWidth >= 100 && once === false) {
-    once = true
-    projectsList[index].style.display = "none"
-    if (index === projectsList.length - 1) {
-      index = 0
-    } else {
-      index++
-    }
-    projectsList[index].style.display = null
-    setTimeout(() => {
-      ProgressBar.current.style.transition = "unset"
-      setProgressBarWidth(0)
-      once = false
-      ProgressBar.current.style.transition = null
-    }, 500)
-  }
+    // document
+    //   .getElementById(index)
+    //   .querySelector('img').style.transform = `translateX: ${
+    //   Math.random() * (1000 - 500) + 500
+    // }`
+  }, [index])
 
   return (
     <>
@@ -58,7 +43,7 @@ function Home() {
                 <p>{project.description}</p>
               </div>
               <div className="home-interaction">
-                <Link to="/project/makyma" className="red btn">
+                <Link to="/project/{project.name}" className="red btn">
                   En savoir plus
                 </Link>
                 <div className="line"></div>
@@ -66,18 +51,9 @@ function Home() {
             </Col>
           </Row>
         ))}
-        <Row className="slider">
-          <Col className="line-container" md={{ span: 4 }}>
-            0{index + 1}
-            <div className="line">
-              <span
-                ref={ProgressBar}
-                style={{ width: progressBarWidth + "%" }}
-              ></span>
-            </div>
-            0{projects.length}
-          </Col>
-        </Row>
+        <Context.Provider value={{ index: [index, setIndex] }}>
+          <Slider />
+        </Context.Provider>
       </Container>
     </>
   )
