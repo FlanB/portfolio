@@ -1,9 +1,12 @@
-import "./_Project.scss"
+import './_Project.scss'
+import projects from '../projects.json'
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col } from 'react-bootstrap'
 
 export default function Project(props) {
   const name = props.match.params.name
+  const project = projects.find((project) => project.name === name)
+
   return (
     <>
       <div className="project-container-title">
@@ -18,7 +21,7 @@ export default function Project(props) {
         </Row>
         <Row md="2" className="text justify-content-center">
           <Col md="4" className="title">
-            <h1>{name}</h1>
+            <h1>{project.name}</h1>
             <span className="date">2021</span>
           </Col>
           <Col md="4">
@@ -31,32 +34,23 @@ export default function Project(props) {
       </div>
       <Container className="project">
         <div className="img">
-          <img src="/img/makyma/index.png" alt="" />
-          <img src="/img/makyma/categories.png" alt="" />
-          <img src="/img/makyma/products.png" alt="" />
+          <img src={project.imgs[0]} alt="" />
+          <img src={project.imgs[1]} alt="" />
+          <img src={project.imgs[2]} alt="" />
         </div>
         <Row className="credits">
           <Col className="title">Équipe</Col>
           <Col className="jobs">
-            <div>
-              <span>Designer :</span>
-              <ul>
-                <li>Clément Renou</li>
-                <li>Anais Mancho</li>
-                <li>Hugo Blanchard</li>
-                <li>Adel Sanaa</li>
-                <li>Léo Melle</li>
-              </ul>
-            </div>
-            <div>
-              <span>Développeur :</span>
-              <ul>
-                <li>Gabriel Rouleau</li>
-                <li>Élise Echasseriau</li>
-                <li>Hugo Faugeroux</li>
-                <li>Sami Lafrance</li>
-              </ul>
-            </div>
+            {Object.keys(project.team).map((jobs) => (
+              <div key={jobs}>
+                <span>{jobs}</span>
+                <ul>
+                  {project.team[jobs].map((job) => (
+                    <li key={job}>{job}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </Col>
         </Row>
       </Container>
