@@ -1,6 +1,6 @@
-import "./_Project.scss"
+import './_Project.scss'
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col } from 'react-bootstrap'
 
 export default function Project(props) {
   const name = props.match.params.name

@@ -52,7 +52,7 @@ function Home() {
                 <p>{project.description}</p>
               </div>
               <div className="home-interaction">
-                <Link to="/project/{project.name}" className="red btn">
+                <Link to={'/project/' + project.name} className="red btn">
                   En savoir plus
                 </Link>
                 <div className="line"></div>
