@@ -19,17 +19,21 @@ function Home() {
   const [index, setIndex] = useState(0)
   const value = useMemo(() => ({ index, setIndex }), [index, setIndex])
 
+  //init array
   useEffect(() => {
+    projectsList = []
     projects.forEach((project, index) => {
       projectsList.push(document.getElementById(index))
     })
+
     for (let id = 1; id < projectsList.length; id++) {
       projectsList[id].style.display = 'none'
     }
   }, [])
 
+  //slide animation
   useEffect(() => {
-    let random = Math.random() * (500 - -200) + -200
+    const random = Math.random() * (500 - -100) + -100
     document.querySelectorAll('.content').forEach((el) => {
       el.querySelector('img').style.transform = `translateX( ${random}px)`
       el.querySelector(

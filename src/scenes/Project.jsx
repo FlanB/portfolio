@@ -71,6 +71,7 @@ export default function Project(props) {
         className="scroll-top"
         ref={scrollBtn}
         onClick={() => window.scrollTo(0, 0)}
+        style={{ display: 'none' }}
       >
         <svg
           viewBox="0 0 24 24"
