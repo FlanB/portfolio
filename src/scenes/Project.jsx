@@ -54,6 +54,21 @@ export default function Project(props) {
           </Col>
         </Row>
       </Container>
+      <div className="scroll-top" onClick={() => window.scrollTo(0, 0)}>
+        <svg
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          stroke="currentColor"
+          strokeWidth="2"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </div>
     </>
   )
 }
