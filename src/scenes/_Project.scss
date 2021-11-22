@@ -78,3 +78,24 @@
     }
   }
 }
+
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
+  border-radius: 50%;
+  background: #fb7185;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1rem hsla(351, 95%, 71%, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: white;
+  &:hover {
+    background: #f9a8a8;
+  }
+}

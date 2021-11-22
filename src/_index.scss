@@ -7,7 +7,7 @@ $red: #fb7185;
   margin: 0;
   font-family: Poppins;
 }
-ul{
+ul {
   list-style: none;
   margin-block: 0;
   padding-inline: 0;
@@ -38,6 +38,9 @@ button {
 
   /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
