@@ -42,11 +42,11 @@ export default function Project(props) {
           <Col className="title">Équipe</Col>
           <Col className="jobs">
             {Object.keys(project.team).map((jobs) => (
-              <div>
+              <div key={jobs}>
                 <span>{jobs}</span>
                 <ul>
                   {project.team[jobs].map((job) => (
-                    <li>{job}</li>
+                    <li key={job}>{job}</li>
                   ))}
                 </ul>
               </div>
