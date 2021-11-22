@@ -2,10 +2,22 @@ import './_Project.scss'
 import projects from '../projects.json'
 
 import { Container, Row, Col } from 'react-bootstrap'
+import { useRef, useEffect } from 'react'
 
 export default function Project(props) {
   const name = props.match.params.name
   const project = projects.find((project) => project.name === name)
+  const scrollBtn = useRef(null)
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > window.innerHeight) {
+        scrollBtn.current.style.opacity = 1
+      } else {
+        scrollBtn.current.style.opacity = 0
+      }
+    })
+  }, [])
 
   return (
     <>
@@ -54,7 +66,12 @@ export default function Project(props) {
           </Col>
         </Row>
       </Container>
-      <div className="scroll-top" onClick={() => window.scrollTo(0, 0)}>
+
+      <div
+        className="scroll-top"
+        ref={scrollBtn}
+        onClick={() => window.scrollTo(0, 0)}
+      >
         <svg
           viewBox="0 0 24 24"
           width="32"
