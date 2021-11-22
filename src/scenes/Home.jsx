@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react'
+import { createContext, useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
 
@@ -10,15 +10,21 @@ import projects from '../projects.json'
 
 export let projectsList = []
 
-export const Context = createContext()
+export const Context = createContext({
+  index: 0,
+  setIndex: () => {},
+})
 
 function Home() {
   const [index, setIndex] = useState(0)
+  const value = useMemo(() => ({ index, setIndex }), [index, setIndex])
 
   useEffect(() => {
     projects.forEach((project, index) => {
       projectsList.push(document.getElementById(index))
     })
+  }, [])
+  useEffect(() => {
     for (let id = 1; id < projectsList.length; id++) {
       projectsList[id].style.display = 'none'
     }
@@ -51,7 +57,7 @@ function Home() {
             </Col>
           </Row>
         ))}
-        <Context.Provider value={{ index: [index, setIndex] }}>
+        <Context.Provider value={value}>
           <Slider />
         </Context.Provider>
       </Container>

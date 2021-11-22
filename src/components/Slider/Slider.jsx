@@ -7,34 +7,35 @@ import { projectsList, Context } from '../../scenes/Home'
 let once = false
 
 export default function Slider() {
-  const {
-    index: [index, setIndex],
-  } = useContext(Context)
+  const { index, setIndex } = useContext(Context)
   const [progressBarWidth, setProgressBarWidth] = useState(0)
   const ProgressBar = useRef(null)
-
   useEffect(() => {
     setInterval(
       () => setProgressBarWidth((progressBarWidth) => progressBarWidth + 10),
       1000,
     )
   }, [])
-  if (progressBarWidth >= 100 && once === false) {
-    once = true
-    projectsList[index].style.display = 'none'
-    if (index === projectsList.length - 1) {
-      setIndex(0)
-    } else {
-      setIndex(index + 1)
-    }
-    projectsList[index].style.display = null
-    setTimeout(() => {
-      ProgressBar.current.style.transition = 'unset'
+
+  useEffect(() => {
+    if (progressBarWidth >= 100 && once === false) {
+      once = true
+      projectsList[index].style.display = 'none'
+      console.log(projectsList[index])
+      if (index === projectsList.length - 1) {
+        setIndex(0)
+      } else {
+        setIndex(index + 1)
+      }
+      projectsList[index].style.display = null
+      //   ProgressBar.current.style.transition = 'unset'
       setProgressBarWidth(0)
-      once = false
-      ProgressBar.current.style.transition = null
-    }, 500)
-  }
+      //   ProgressBar.current.style.transition = null
+      setTimeout(() => {
+        once = false
+      }, 2000)
+    }
+  }, [index, progressBarWidth, setIndex])
 
   return (
     <Row className="slider">
