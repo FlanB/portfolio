@@ -23,16 +23,19 @@ function Home() {
     projects.forEach((project, index) => {
       projectsList.push(document.getElementById(index))
     })
-  }, [])
-  useEffect(() => {
     for (let id = 1; id < projectsList.length; id++) {
       projectsList[id].style.display = 'none'
     }
-    // document
-    //   .getElementById(index)
-    //   .querySelector('img').style.transform = `translateX: ${
-    //   Math.random() * (1000 - 500) + 500
-    // }`
+  }, [])
+
+  useEffect(() => {
+    let random = Math.random() * (500 - -200) + -200
+    document.querySelectorAll('.content').forEach((el) => {
+      el.querySelector('img').style.transform = `translateX( ${random}px)`
+      el.querySelector(
+        '.home-info',
+      ).style.transform = `translateX( -${random}px)`
+    })
   }, [index])
 
   return (

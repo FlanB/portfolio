@@ -1,13 +1,13 @@
 [
   {
     "name": "Makyma",
-    "logo": "https://res.cloudinary.com/dhai91u82/image/upload/v1636761133/Portfolio/Makyma_logo.svg",
+    "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
     "date": "2021",
     "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
     "imgs": [
-      "https://res.cloudinary.com/dhai91u82/image/upload/v1636760330/Portfolio/Makyma_index.png",
-      "https://res.cloudinary.com/dhai91u82/image/upload/v1636760862/Portfolio/Makyma_categories.png",
-      "https://res.cloudinary.com/dhai91u82/image/upload/v1636760333/Portfolio/Makyma_product.png"
+      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760330/Portfolio/Makyma_index.png",
+      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
+      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
     ],
     "team": {
       "Designer": [
@@ -27,13 +27,13 @@
   },
   {
     "name": "Projet 2",
-    "logo": "https://res.cloudinary.com/dhai91u82/image/upload/v1636761133/Portfolio/Makyma_logo.svg",
+    "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
     "date": "2021",
     "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
     "imgs": [
-      "https://res.cloudinary.com/dhai91u82/image/upload/v1636760330/Portfolio/Makyma_index.png",
-      "https://res.cloudinary.com/dhai91u82/image/upload/v1636760862/Portfolio/Makyma_categories.png",
-      "https://res.cloudinary.com/dhai91u82/image/upload/v1636760333/Portfolio/Makyma_product.png"
+      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760330/Portfolio/Makyma_index.png",
+      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
+      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
     ],
     "team": {
       "Designer": [
@@ -52,4 +52,3 @@
     }
   }
 ]
-

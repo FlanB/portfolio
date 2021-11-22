@@ -21,19 +21,22 @@ export default function Slider() {
     if (progressBarWidth >= 100 && once === false) {
       once = true
       projectsList[index].style.display = 'none'
-      console.log(projectsList[index])
       if (index === projectsList.length - 1) {
         setIndex(0)
       } else {
         setIndex(index + 1)
       }
-      projectsList[index].style.display = null
+      if (index < projectsList.length - 1) {
+        projectsList[index + 1].style.display = null
+      } else {
+        projectsList[0].style.display = null
+      }
       //   ProgressBar.current.style.transition = 'unset'
       setProgressBarWidth(0)
       //   ProgressBar.current.style.transition = null
       setTimeout(() => {
         once = false
-      }, 2000)
+      }, 1000)
     }
   }, [index, progressBarWidth, setIndex])
 
