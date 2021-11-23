@@ -5,7 +5,6 @@ import { useState, useRef, useEffect, useContext } from 'react'
 import { projectsList, Context } from '../../scenes/Home'
 
 let once = false
-let isMounted = false
 
 export default function Slider() {
   const { index, setIndex } = useContext(Context)
@@ -20,8 +19,7 @@ export default function Slider() {
   }, [])
 
   useEffect(() => {
-    isMounted = true
-    if (progressBarWidth >= 100 && once === false && isMounted) {
+    if (progressBarWidth >= 100 && once === false ) {
       once = true
       projectsList[index].style.display = 'none'
       if (index === projectsList.length - 1) {
@@ -39,10 +37,7 @@ export default function Slider() {
       //   ProgressBar.current.style.transition = null
       setTimeout(() => {
         once = false
-      }, 1000)
-    }
-    return () => {
-      isMounted = false
+      }, 500)
     }
   }, [index, progressBarWidth, setIndex])
 

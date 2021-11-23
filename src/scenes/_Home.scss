@@ -11,13 +11,14 @@
       transition: 0.5s ease-in-out;
     }
     .home-info {
-      z-index: 1;
+      z-index: 10;
       transition: transform 0.5s ease-in-out;
       background: linear-gradient(
         to left,
         transparent,
-        white 10%,
-        transparent 90%
+        rgba(255, 255, 255, 0.9) 20%,
+        rgba(255, 255, 255, 0.9) 80%,
+        transparent
       );
 
       .home-text {
