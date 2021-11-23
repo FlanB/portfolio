@@ -1,54 +1,164 @@
-[
-  {
-    "name": "Makyma",
-    "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
-    "date": "2021",
-    "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
-    "imgs": [
-      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760330/Portfolio/Makyma_index.png",
-      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
-      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
-    ],
-    "team": {
-      "Designer": [
-        "Clément Renou",
-        "Anais Mancho",
-        "Hugo Blanchard",
-        "Adel Sanaa",
-        "Léo Melle"
+{
+  "design": [
+    {
+      "name": "Makyma",
+      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "date": "2021",
+      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
+      "imgs": [
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760330/Portfolio/Makyma_index.png",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
       ],
-      "Développeur": [
-        "Gabriel Rouleau",
-        "Élise Echasseriau",
-        "Hugo Faugeroux",
-        "Sami Lafrance"
-      ]
-    }
-  },
-  {
-    "name": "Projet 2",
-    "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
-    "date": "2021",
-    "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
-    "imgs": [
-      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760330/Portfolio/Makyma_index.png",
-      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
-      "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
-    ],
-    "team": {
-      "Designer": [
-        "Clément Renou",
-        "Anais Mancho",
-        "Hugo Blanchard",
-        "Adel Sanaa",
-        "Léo Melle"
+      "team": {
+        "Designer": [
+          "Clément Renou",
+          "Anais Mancho",
+          "Hugo Blanchard",
+          "Adel Sanaa",
+          "Léo Melle"
+        ],
+        "Développeur": [
+          "Gabriel Rouleau",
+          "Élise Echasseriau",
+          "Hugo Faugeroux",
+          "Sami Lafrance"
+        ]
+      }
+    },
+    {
+      "name": "Projet 2",
+      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "date": "2021",
+      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
+      "imgs": [
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760330/Portfolio/Makyma_index.png",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
       ],
-      "Développeur": [
-        "Gabriel Rouleau",
-        "Élise Echasseriau",
-        "Hugo Faugeroux",
-        "Sami Lafrance"
-      ]
+      "team": {
+        "Designer": [
+          "Clément Renou",
+          "Anais Mancho",
+          "Hugo Blanchard",
+          "Adel Sanaa",
+          "Léo Melle"
+        ],
+        "Développeur": [
+          "Gabriel Rouleau",
+          "Élise Echasseriau",
+          "Hugo Faugeroux",
+          "Sami Lafrance"
+        ]
+      }
     }
-  }
-]
+  ],
+  "dev": [
+    {
+      "name": "Dev",
+      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "date": "2021",
+      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
+      "imgs": [
+        "https://via.placeholder.com/450",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
+      ],
+      "team": {
+        "Designer": [
+          "Clément Renou",
+          "Anais Mancho",
+          "Hugo Blanchard",
+          "Adel Sanaa",
+          "Léo Melle"
+        ],
+        "Développeur": [
+          "Gabriel Rouleau",
+          "Élise Echasseriau",
+          "Hugo Faugeroux",
+          "Sami Lafrance"
+        ]
+      }
+    },
+    {
+      "name": "Dev 2",
+      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "date": "2021",
+      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
+      "imgs": [
+        "https://via.placeholder.com/450",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
+      ],
+      "team": {
+        "Designer": [
+          "Clément Renou",
+          "Anais Mancho",
+          "Hugo Blanchard",
+          "Adel Sanaa",
+          "Léo Melle"
+        ],
+        "Développeur": [
+          "Gabriel Rouleau",
+          "Élise Echasseriau",
+          "Hugo Faugeroux",
+          "Sami Lafrance"
+        ]
+      }
+    }
+  ],
+  "audiovisuel": [
+    {
+      "name": "Audiovisuel",
+      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "date": "2021",
+      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
+      "imgs": [
+        "https://via.placeholder.com/450",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
+      ],
+      "team": {
+        "Designer": [
+          "Clément Renou",
+          "Anais Mancho",
+          "Hugo Blanchard",
+          "Adel Sanaa",
+          "Léo Melle"
+        ],
+        "Développeur": [
+          "Gabriel Rouleau",
+          "Élise Echasseriau",
+          "Hugo Faugeroux",
+          "Sami Lafrance"
+        ]
+      }
+    },
+    {
+      "name": "Audiovisuel 2",
+      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "date": "2021",
+      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
+      "imgs": [
+        "https://via.placeholder.com/450",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
+        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
+      ],
+      "team": {
+        "Designer": [
+          "Clément Renou",
+          "Anais Mancho",
+          "Hugo Blanchard",
+          "Adel Sanaa",
+          "Léo Melle"
+        ],
+        "Développeur": [
+          "Gabriel Rouleau",
+          "Élise Echasseriau",
+          "Hugo Faugeroux",
+          "Sami Lafrance"
+        ]
+      }
+    }
+  ]
+}

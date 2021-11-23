@@ -1,13 +1,14 @@
-import "./_Navbar.scss"
+import './_Navbar.scss'
 
-import Boutons from "../Boutons/Boutons"
+import Boutons from '../Boutons/Boutons'
 
-import { Link, useLocation } from "react-router-dom"
-import { useState } from "react"
+import { Link, useLocation } from 'react-router-dom'
+import { useContext } from 'react'
+import { SkillContext } from '../../scenes/App'
 
 export default function Navbar() {
   const location = useLocation()
-  const [skill, setSkill] = useState("design")
+  const { skill, setSkill } = useContext(SkillContext)
 
   return (
     <nav>
@@ -15,7 +16,7 @@ export default function Navbar() {
         <div className="nav-permanent">
           <Link
             to="/"
-            className={location.pathname === "/" ? "" : "a-disactive"}
+            className={location.pathname === '/' ? '' : 'a-disactive'}
           >
             Clément Renou
           </Link>
@@ -39,34 +40,34 @@ export default function Navbar() {
           </svg>
           <Link
             to="/about"
-            className={location.pathname === "/about" ? "" : "a-disactive"}
+            className={location.pathname === '/about' ? '' : 'a-disactive'}
           >
             À propos
           </Link>
         </div>
         <div
           className="nav-buttons"
-          style={location.pathname === "/" ? null : { visibility: "hidden" }}
+          style={location.pathname === '/' ? null : { visibility: 'hidden' }}
         >
           <Boutons
             color="red"
-            enable={skill === "design" ? true : false}
-            onClick={() => setSkill("design")}
+            enable={skill === 0 ? true : false}
+            onClick={() => setSkill(0)}
           >
             Design
           </Boutons>
           <Boutons
             color="violet"
             center
-            enable={skill === "programmation" ? true : false}
-            onClick={() => setSkill("programmation")}
+            enable={skill === 1 ? true : false}
+            onClick={() => setSkill(1)}
           >
             Programmation
           </Boutons>
           <Boutons
             color="blue"
-            enable={skill === "audiovisuel" ? true : false}
-            onClick={() => setSkill("audiovisuel")}
+            enable={skill === 2 ? true : false}
+            onClick={() => setSkill(2)}
           >
             Audiovisuel
           </Boutons>
