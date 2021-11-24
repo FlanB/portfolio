@@ -79,13 +79,15 @@ function Home() {
 
   //slide animation
   useEffect(() => {
-    const random = Math.random() * (500 - -100) + -100
-    document.querySelectorAll(".content").forEach((el) => {
-      el.querySelector("img").style.transform = `translateX( ${random}px)`
-      el.querySelector(
-        ".home-info"
-      ).style.transform = `translateX( -${random}px)`
-    })
+    const random = Math.random() * (600 - 400) + 400
+    setTimeout(() => {
+      document.querySelectorAll(".content").forEach((el) => {
+        el.querySelector("img").style.transform = `translateX( ${random}px)`
+        el.querySelector(
+          ".home-info"
+        ).style.transform = `translateX( -${random}px)`
+      })
+    }, 100)
   }, [index])
 
   return (
