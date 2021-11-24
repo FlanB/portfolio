@@ -6,10 +6,11 @@ import { useRef, useEffect } from "react"
 let project
 export default function Project(props) {
   const name = props.match.params.name
-
+  project = undefined
   Object.values(projects).forEach((el) => {
     if (project) return
     project = el.find((i) => {
+      console.log(i.name);
       return i.name === name
     })
   })
