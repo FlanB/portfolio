@@ -1,13 +1,13 @@
-import { createContext, useEffect, useMemo, useState, useContext } from 'react'
-import { Link } from 'react-router-dom'
-import { Container, Row, Col } from 'react-bootstrap'
+import { createContext, useEffect, useMemo, useState, useContext } from "react"
+import { Link } from "react-router-dom"
+import { Container, Row, Col } from "react-bootstrap"
 
-import './_Home.scss'
+import "./_Home.scss"
 
-import Slider from '../components/Slider/Slider'
-import { SkillContext } from '../scenes/App'
+import Slider from "../components/Slider/Slider"
+import { SkillContext } from "../scenes/App"
 
-import projects from '../projects.json'
+import projects from "../projects.json"
 
 export let projectsList = []
 export const Context = createContext({
@@ -17,8 +17,11 @@ export const Context = createContext({
 
 function Home() {
   const [index, setIndex] = useState(0)
-  const value = useMemo(() => ({ index, setIndex }), [index, setIndex])
   const { skill } = useContext(SkillContext)
+  const value = useMemo(
+    () => ({ index, setIndex, skill }),
+    [index, setIndex, skill]
+  )
   const [content, setContent] = useState(
     Object.values(projects)[skill].map((project, index) => (
       <Row className="content" key={index} id={index}>
@@ -31,17 +34,16 @@ function Home() {
             <p>{project.description}</p>
           </div>
           <div className="home-interaction">
-            <Link to={'/project/' + project.name} className="red btn">
+            <Link to={"/project/" + project.name} className="red btn">
               En savoir plus
             </Link>
             <div className="line"></div>
           </div>
         </Col>
       </Row>
-    )),
+    ))
   )
   useEffect(() => {
-    
     setContent(
       Object.values(projects)[skill].map((project, index) => (
         <Row className="content" key={index} id={index}>
@@ -54,14 +56,14 @@ function Home() {
               <p>{project.description}</p>
             </div>
             <div className="home-interaction">
-              <Link to={'/project/' + project.name} className="red btn">
+              <Link to={"/project/" + project.name} className="red btn">
                 En savoir plus
               </Link>
               <div className="line"></div>
             </div>
           </Col>
         </Row>
-      )),
+      ))
     )
   }, [skill])
   //init array
@@ -71,17 +73,17 @@ function Home() {
       projectsList.push(document.getElementById(index))
     })
     for (let id = 1; id < projectsList.length; id++) {
-      projectsList[id].style.display = 'none'
+      projectsList[id].style.display = "none"
     }
   }, [])
 
   //slide animation
   useEffect(() => {
     const random = Math.random() * (500 - -100) + -100
-    document.querySelectorAll('.content').forEach((el) => {
-      el.querySelector('img').style.transform = `translateX( ${random}px)`
+    document.querySelectorAll(".content").forEach((el) => {
+      el.querySelector("img").style.transform = `translateX( ${random}px)`
       el.querySelector(
-        '.home-info',
+        ".home-info"
       ).style.transform = `translateX( -${random}px)`
     })
   }, [index])

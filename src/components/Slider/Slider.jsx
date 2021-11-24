@@ -1,27 +1,29 @@
-import './_Slider.scss'
+import "./_Slider.scss"
 
-import { Row, Col } from 'react-bootstrap'
-import { useState, useRef, useEffect, useContext } from 'react'
-import { projectsList, Context } from '../../scenes/Home'
+import { Row, Col } from "react-bootstrap"
+import { useState, useRef, useEffect, useContext } from "react"
+import { projectsList, Context } from "../../scenes/Home"
 
 let once = false
 
 export default function Slider() {
-  const { index, setIndex } = useContext(Context)
+  const { index, setIndex, skill } = useContext(Context)
   const [progressBarWidth, setProgressBarWidth] = useState(0)
   const ProgressBar = useRef(null)
   useEffect(() => {
     setProgressBarWidth(0)
+  }, [skill])
+  useEffect(() => {
     setInterval(
       () => setProgressBarWidth((progressBarWidth) => progressBarWidth + 10),
-      1000,
+      1000
     )
   }, [])
 
   useEffect(() => {
-    if (progressBarWidth >= 100 && once === false ) {
+    if (progressBarWidth >= 100 && once === false) {
       once = true
-      projectsList[index].style.display = 'none'
+      projectsList[index].style.display = "none"
       if (index === projectsList.length - 1) {
         setIndex(0)
       } else {
@@ -48,7 +50,7 @@ export default function Slider() {
         <div className="line">
           <span
             ref={ProgressBar}
-            style={{ width: progressBarWidth + '%' }}
+            style={{ width: progressBarWidth + "%" }}
           ></span>
         </div>
         0{projectsList.length}
