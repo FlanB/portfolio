@@ -1,16 +1,23 @@
-import './_Project.scss'
-import projects from '../projects.json'
+import "./_Project.scss"
+import projects from "../projects.json"
 
-import { Container, Row, Col } from 'react-bootstrap'
-import { useRef, useEffect } from 'react'
-
+import { Container, Row, Col } from "react-bootstrap"
+import { useRef, useEffect } from "react"
+let project
 export default function Project(props) {
   const name = props.match.params.name
-  const project = projects.find((project) => project.name === name)
+
+  Object.values(projects).forEach((el) => {
+    if (project) return
+    project = el.find((i) => {
+      return i.name === name
+    })
+  })
+
   const scrollBtn = useRef(null)
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (window.scrollY > window.innerHeight) {
         scrollBtn.current.style.opacity = 1
       } else {
@@ -71,7 +78,7 @@ export default function Project(props) {
         className="scroll-top"
         ref={scrollBtn}
         onClick={() => window.scrollTo(0, 0)}
-        style={{ display: 'none' }}
+        style={{ display: "none" }}
       >
         <svg
           viewBox="0 0 24 24"
