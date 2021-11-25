@@ -7,7 +7,6 @@ function Boutons(props) {
         props.enable ? "enable" : "disable"
       }`}
       onClick={props.onClick}
-      // renderAs={props.renderAs}
     >
       {props.children}
     </button>
