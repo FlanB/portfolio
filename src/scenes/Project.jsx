@@ -42,13 +42,10 @@ export default function Project(props) {
         <Row md="2" className="text justify-content-center">
           <Col md="4" className="title">
             <h1>{project.name}</h1>
-            <span className="date">2021</span>
+            <span className="date">{project.date}</span>
           </Col>
           <Col md="4">
-            <p>
-              Un site web et une webapp qui fait découvrir à l’utilisateur des
-              alternatives aux produits du quotidien
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
           </Col>
         </Row>
       </div>
