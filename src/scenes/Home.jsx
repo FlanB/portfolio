@@ -31,10 +31,19 @@ function Home() {
         <Col className="home-info" md={{ span: 5 }}>
           <div className="home-text">
             <h1 className="home-display">{project.name}</h1>
-            <p>{project.description}</p>
+            <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
           </div>
           <div className="home-interaction">
-            <Link to={"/project/" + project.name} className="red btn">
+            <Link
+              to={"/project/" + project.name}
+              className={
+                skill === 0
+                  ? "btn red"
+                  : null + skill === 1
+                  ? "btn violet"
+                  : "btn blue"
+              }
+            >
               En savoir plus
             </Link>
             <div className="line"></div>
@@ -56,7 +65,16 @@ function Home() {
               <p>{project.description}</p>
             </div>
             <div className="home-interaction">
-              <Link to={"/project/" + project.name} className="red btn">
+              <Link
+                to={"/project/" + project.name}
+                className={
+                  skill === 0
+                    ? "btn red"
+                    : null + skill === 1
+                    ? "btn violet"
+                    : "btn blue"
+                }
+              >
                 En savoir plus
               </Link>
               <div className="line"></div>

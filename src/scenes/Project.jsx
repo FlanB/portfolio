@@ -51,9 +51,9 @@ export default function Project(props) {
       </div>
       <Container className="project">
         <div className="img">
-          <img src={project.imgs[0]} alt="" />
-          <img src={project.imgs[1]} alt="" />
-          <img src={project.imgs[2]} alt="" />
+          {project.imgs.map((image, index) => (
+            <img key={index} src={image} alt={project.name} />
+          ))}
         </div>
         <Row className="credits">
           <Col className="title">Équipe</Col>

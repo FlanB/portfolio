@@ -26,16 +26,15 @@ export default function Navbar() {
             viewBox="0 0 12 35"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="slash"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
           >
             <line
               x1="10.9963"
               y1="1.24727"
               x2="1.24725"
               y2="33.3784"
-              stroke="#FB7185"
-              strokeWidth="2"
-              strokeLinecap="round"
             />
           </svg>
           <Link
