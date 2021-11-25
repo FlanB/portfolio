@@ -5,8 +5,9 @@ import { Container, Row, Col } from "react-bootstrap"
 import { useRef, useEffect } from "react"
 let project
 export default function Project(props) {
+  const scrollBtn = useRef(null)
   const name = props.match.params.name
-
+  project = undefined
   Object.values(projects).forEach((el) => {
     if (project) return
     project = el.find((i) => {
@@ -14,14 +15,14 @@ export default function Project(props) {
     })
   })
 
-  const scrollBtn = useRef(null)
-
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > window.innerHeight) {
-        scrollBtn.current.style.opacity = 1
-      } else {
-        scrollBtn.current.style.opacity = 0
+      if (scrollBtn.current) {
+        if (window.scrollY > window.innerHeight) {
+          scrollBtn.current.style.opacity = 1
+        } else {
+          scrollBtn.current.style.opacity = 0
+        }
       }
     })
   }, [])
@@ -41,13 +42,10 @@ export default function Project(props) {
         <Row md="2" className="text justify-content-center">
           <Col md="4" className="title">
             <h1>{project.name}</h1>
-            <span className="date">2021</span>
+            <span className="date">{project.date}</span>
           </Col>
           <Col md="4">
-            <p>
-              Un site web et une webapp qui fait découvrir à l’utilisateur des
-              alternatives aux produits du quotidien
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
           </Col>
         </Row>
       </div>
@@ -78,7 +76,7 @@ export default function Project(props) {
         className="scroll-top"
         ref={scrollBtn}
         onClick={() => window.scrollTo(0, 0)}
-        style={{ display: "none" }}
+        style={{ opacity: 0 }}
       >
         <svg
           viewBox="0 0 24 24"
