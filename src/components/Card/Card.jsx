@@ -619,6 +619,7 @@ export default function Card(props) {
       </svg>
       <p>{props.content}</p>
       <Boutons
+        enable
         color={
           {
             design: "red",

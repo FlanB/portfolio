@@ -2,11 +2,13 @@ import "./_About.scss"
 
 import Card from "../components/Card/Card"
 
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import { Link } from "react-router-dom"
+import { Container, Row, Col } from "react-bootstrap"
+import { useContext } from "react"
+import { SkillContext } from "../scenes/App"
 
 export default function About() {
+  const { setSkill } = useContext(SkillContext)
   return (
     <Container>
       <div className="about">
@@ -204,26 +206,48 @@ export default function About() {
           </svg>
         </Col>
         <Row>
-          <Col md={{ offset: 1, span: 3 }}>
-            <Card
-              skill="design"
-              title="Design"
-              content="Dui elementum morbi non, mattis. Lorem non consequat enim fusce."
-            ></Card>
+          <Col
+            onClick={() => {
+              setSkill(0)
+            }}
+            md={{ offset: 1, span: 3 }}
+          >
+            <Link to="/">
+              <Card
+                skill="design"
+                title="Design"
+                content="Dui elementum morbi non, mattis. Lorem non consequat enim fusce."
+              ></Card>
+            </Link>
           </Col>
-          <Col className="mt-5" md={{ offset: 1, span: 3 }}>
-            <Card
-              skill="programmation"
-              title="Programmation"
-              content="Dui elementum morbi non, mattis. Lorem non consequat enim fusce."
-            ></Card>
+          <Col
+            onClick={() => {
+              setSkill(1)
+            }}
+            className="mt-5"
+            md={{ offset: 1, span: 3 }}
+          >
+            <Link to="/">
+              <Card
+                skill="programmation"
+                title="Programmation"
+                content="Dui elementum morbi non, mattis. Lorem non consequat enim fusce."
+              ></Card>
+            </Link>
           </Col>
-          <Col md={{ offset: 1, span: 3 }}>
-            <Card
-              skill="audiovisuel"
-              title="Audiovisuel"
-              content="Dui elementum morbi non, mattis. Lorem non consequat enim fusce."
-            ></Card>
+          <Col
+            onClick={() => {
+              setSkill(2)
+            }}
+            md={{ offset: 1, span: 3 }}
+          >
+            <Link to="/">
+              <Card
+                skill="audiovisuel"
+                title="Audiovisuel"
+                content="Dui elementum morbi non, mattis. Lorem non consequat enim fusce."
+              ></Card>
+            </Link>
           </Col>
         </Row>
       </div>
