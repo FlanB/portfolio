@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.0.0-beta3",
+    "firebase": "^9.5.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-bulma-components": "^4.0.4",
@@ -19,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && firebase deploy --only hosting:clement-renou",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

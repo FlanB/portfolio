@@ -31,7 +31,7 @@ function Home() {
         <Col className="home-info" md={{ span: 5 }}>
           <div className="home-text">
             <h1 className="home-display">{project.name}</h1>
-            <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
+            <p>{project.description}</p>
           </div>
           <div className="home-interaction">
             <Link

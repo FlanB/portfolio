@@ -2,9 +2,10 @@
   "design": [
     {
       "name": "Makyma",
-      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Makyma%2Flogo.svg?alt=media&token=6d4109f3-86f1-46f1-a1b7-adb5cd505f05",
       "date": "2021",
-      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien. <a href='https://www.makyma.org/'>https://www.makyma.org</a>",
+      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien.",
+      "link": "https://www.makyma.org/",
       "imgs": [
         "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760330/Portfolio/Makyma_index.png",
         "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
@@ -27,137 +28,87 @@
       }
     },
     {
-      "name": "Projet 2",
-      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "name": "Blog'Art",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/blogart.svg?alt=media&token=d0f2bc7e-40d7-46cb-ad00-6142bd7627e0",
       "date": "2021",
-      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
+      "description": "Un blog donc avec du développement frontend, mais surtout du développement backend sur un sujet qu'on voulait. On a choisi les startups bordelaises.",
       "imgs": [
-        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760330/Portfolio/Makyma_index.png",
-        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
-        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Accueil.png?alt=media&token=eca47862-86e1-447e-afd8-051656e2da40",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Exemple%20Article.png?alt=media&token=271365e6-adcc-4f7c-8104-92d702a75507",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Votre%20compte.png?alt=media&token=102e9a5e-c2dd-4ffd-a22d-47d505c4c3ad",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Connexion.png?alt=media&token=1c30fcb8-1693-48df-b0a4-7e8b3763eb71",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Inscription.png?alt=media&token=0d6c3bda-ccc3-43e3-8019-e4e45e6da144",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Contact.png?alt=media&token=739ebbb9-d9ab-4633-86bc-da5a71bcf83b"
       ],
       "team": {
-        "Designer": [
-          "Clément Renou",
-          "Anais Mancho",
-          "Hugo Blanchard",
-          "Adel Sanaa",
-          "Léo Melle"
-        ],
-        "Développeur": [
-          "Gabriel Rouleau",
-          "Élise Echasseriau",
-          "Hugo Faugeroux",
-          "Sami Lafrance"
-        ]
+        "Designer": ["Clément Renou", "Enzo Duret", "Yani Madebos"],
+        "Développeur": ["Clément Renou", "Maxime Lasserre", "Samuel Labagnère"]
       }
     }
   ],
   "dev": [
     {
-      "name": "Dev",
-      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "name": "Cub'Art",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Cub'Art%2Flogo.svg?alt=media&token=340311b5-9a76-477f-be3d-9ebc9b5dc565",
       "date": "2021",
-      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
+      "description": "Ce module s'attache à la création d’un site web dédié à une couleur et à ses déclinaisons artistiques.",
+      "link": "https://cub-art.netlify.app/",
       "imgs": [
-        "https://via.placeholder.com/450",
-        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
-        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Cub'Art%2FMain%20page%20-%20Description.png?alt=media&token=c59c842b-5780-4c60-bc32-c19dc3b03eee",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Cub'Art%2FMenu%20burger.png?alt=media&token=48ac62fa-ebc2-41da-b49f-be300141da33"
       ],
       "team": {
-        "Designer": [
-          "Clément Renou",
-          "Anais Mancho",
-          "Hugo Blanchard",
-          "Adel Sanaa",
-          "Léo Melle"
-        ],
-        "Développeur": [
-          "Gabriel Rouleau",
-          "Élise Echasseriau",
-          "Hugo Faugeroux",
-          "Sami Lafrance"
-        ]
+        "Designer": ["Alexandre Dupin", "Naja Dalmagne"],
+        "Développeur": ["Clément Renou"]
       }
     },
     {
-      "name": "Dev 2",
-      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "name": "Agence Backstages",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Backstages%2Flogo.svg?alt=media&token=c26c3844-a415-462a-88ff-2f2a17374e3f",
       "date": "2021",
-      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
+      "description": "Ce module s'attache à la création d’un site WEB dédié à une couleur et à ses déclinaisons artistiques.",
+      "link": "https://agencebackstages.fr/",
       "imgs": [
-        "https://via.placeholder.com/450",
-        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
-        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Backstages%2FV2%20-%20PAGE%20D'ACCUEIL%20%E2%80%93%202.png?alt=media&token=2969be47-7e2c-49e6-889b-99d91f66a0cc",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Backstages%2FV2%20-%20MENU.png?alt=media&token=baca9834-1038-4ec3-965a-c20f96bb00d3",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Backstages%2FV2%20-%20PRESENTATION%20PROJETS%20%E2%80%93%201.png?alt=media&token=e5e9288a-3ee7-49aa-b7d1-57aba991ff40",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-4a516.appspot.com/o/Backstages%2FV2%20-%20SERVICE%202.png?alt=media&token=6f3b4930-af5d-45be-9df1-51d58357ee65"
       ],
       "team": {
-        "Designer": [
-          "Clément Renou",
-          "Anais Mancho",
-          "Hugo Blanchard",
-          "Adel Sanaa",
-          "Léo Melle"
-        ],
-        "Développeur": [
-          "Gabriel Rouleau",
-          "Élise Echasseriau",
-          "Hugo Faugeroux",
-          "Sami Lafrance"
-        ]
+        "Designer": ["Alexandre Dupin", "Naja Dalmagne"],
+        "Développeur": ["Clément Renou"]
       }
     }
   ],
   "audiovisuel": [
     {
-      "name": "Audiovisuel",
-      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "name": "Placeholder",
+      "logo": "https://via.placeholder.com/450",
       "date": "2021",
-      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
+      "description": "Placeholder",
       "imgs": [
         "https://via.placeholder.com/450",
-        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
-        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
+        "https://via.placeholder.com/450",
+        "https://via.placeholder.com/450"
       ],
       "team": {
-        "Designer": [
-          "Clément Renou",
-          "Anais Mancho",
-          "Hugo Blanchard",
-          "Adel Sanaa",
-          "Léo Melle"
-        ],
-        "Développeur": [
-          "Gabriel Rouleau",
-          "Élise Echasseriau",
-          "Hugo Faugeroux",
-          "Sami Lafrance"
-        ]
+        "Designer": ["Clément Renou"],
+        "Développeur": ["Gabriel Rouleau"]
       }
     },
     {
-      "name": "Audiovisuel 2",
-      "logo": "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636761133/Portfolio/Makyma_logo.svg",
+      "name": "Placeholder",
+      "logo": "https://via.placeholder.com/450",
       "date": "2021",
-      "description": "Un site web et une webapp qui fait découvrir à l’utilisateur des alternatives aux produits du quotidien",
+      "description": "Placeholder",
       "imgs": [
         "https://via.placeholder.com/450",
-        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760862/Portfolio/Makyma_categories.png",
-        "https://res.cloudinary.com/dhai91u82/image/upload/q_auto:low/v1636760333/Portfolio/Makyma_product.png"
+        "https://via.placeholder.com/450",
+        "https://via.placeholder.com/450"
       ],
       "team": {
-        "Designer": [
-          "Clément Renou",
-          "Anais Mancho",
-          "Hugo Blanchard",
-          "Adel Sanaa",
-          "Léo Melle"
-        ],
-        "Développeur": [
-          "Gabriel Rouleau",
-          "Élise Echasseriau",
-          "Hugo Faugeroux",
-          "Sami Lafrance"
-        ]
+        "Designer": ["Clément Renou"],
+        "Développeur": ["Gabriel Rouleau"]
       }
     }
   ]

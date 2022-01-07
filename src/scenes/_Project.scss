@@ -7,6 +7,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 8rem;
+  img {
+    height: 18rem;
+    color: black;
+    fill: black;
+    stroke: black;
+  }
   a {
     color: currentColor;
   }
