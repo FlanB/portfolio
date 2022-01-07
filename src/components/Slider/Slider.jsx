@@ -1,13 +1,13 @@
 import "./_Slider.scss"
 
-import { Row, Col } from "react-bootstrap"
-import { useState, useRef, useEffect, useContext } from "react"
-import { projectsList, Context } from "../../scenes/Home"
+import { Col, Row } from "react-bootstrap"
+import { useContext, useEffect, useRef, useState } from "react"
+import { Context, projectsList } from "../../scenes/Home"
 
 let once = false
 let once2 = false
 
-export default function Slider() {
+export default function Slider () {
   const { index, setIndex, skill } = useContext(Context)
   const [progressBarWidth, setProgressBarWidth] = useState(0)
   const ProgressBar = useRef(null)
@@ -69,14 +69,14 @@ export default function Slider() {
             }
           }}
         >
-          <polyline points="15 18 9 12 15 6"></polyline>
+          <polyline points="15 18 9 12 15 6"/>
         </svg>
         0{index + 1}
         <div className="line">
           <span
             ref={ProgressBar}
             style={{ width: progressBarWidth + "%" }}
-          ></span>
+          />
         </div>
         0{projectsList.length}
         <svg
@@ -95,7 +95,7 @@ export default function Slider() {
             }
           }}
         >
-          <polyline points="9 18 15 12 9 6"></polyline>
+          <polyline points="9 18 15 12 9 6"/>
         </svg>
       </Col>
     </Row>

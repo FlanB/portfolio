@@ -50,7 +50,7 @@ export default function Navbar() {
         >
           <Boutons
             color="red"
-            enable={skill === 0 ? true : false}
+            enable={skill === 0}
             onClick={() => setSkill(0)}
           >
             Design
@@ -58,14 +58,14 @@ export default function Navbar() {
           <Boutons
             color="violet"
             center
-            enable={skill === 1 ? true : false}
+            enable={skill === 1 }
             onClick={() => setSkill(1)}
           >
             Programmation
           </Boutons>
           <Boutons
             color="blue"
-            enable={skill === 2 ? true : false}
+            enable={skill === 2 }
             onClick={() => setSkill(2)}
           >
             Audiovisuel

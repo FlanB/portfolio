@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import "./_Home.scss"
 
 import Slider from "../components/Slider/Slider"
-import { SkillContext } from "../scenes/App"
+import { SkillContext } from "./App"
 
 import projects from "../projects.json"
 
@@ -46,7 +46,7 @@ function Home() {
             >
               En savoir plus
             </Link>
-            <div className="line"></div>
+            <div className="line"/>
           </div>
         </Col>
       </Row>
@@ -77,7 +77,7 @@ function Home() {
               >
                 En savoir plus
               </Link>
-              <div className="line"></div>
+              <div className="line"/>
             </div>
           </Col>
         </Row>
