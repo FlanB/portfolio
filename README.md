@@ -1,6 +1,7 @@
 # TODO
 
 - [ ] Translate in english
+- [ ] Add animations on hover
 
 ---
 
